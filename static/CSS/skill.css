@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box
+}
+
+.container {
+    width: 100%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 5px;
+    /* Add top padding */
+    padding-bottom: 5px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+}
+
+.html {
+    width: 80%;
+    background-color: #04AA6D;
+}
+
+.Python {
+    width: 75%;
+    background-color: #7aedc3;
+}
+
+.javascript {
+    width: 65%;
+    background-color: #7a73f7;
+}
+
+.sql {
+    width: 90%;
+    background-color: #0e0e0e;
+}
+
+.css {
+    width: 70%;
+    background-color: #2196F3;
+}
+
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+.reactjs {
+    width: 60%;
+    background-color: #680d0d;
+}

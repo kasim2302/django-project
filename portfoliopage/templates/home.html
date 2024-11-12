@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portf </title>
+    <!-- <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'css/skill.css'%}">
+    <link rel="stylesheet" href="{%static 'css/form.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success  ">
+        <div class="left-nav " style="margin-left:20px;" >
+            <h2 class="text-white">MK Portfolio</h2>
+        </div>
+
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home <i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about">About <i class="fa-solid fa-user"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Skills">Skills <i class="fa-solid fa-code"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Project <i class="fas fa-project-diagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact <i class="fa-solid fa-rocket"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Home Section -->
+    <section  id="home"  style="margin-bottom: 70px; margin-top: 50px; margin-left: 50px;">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss fs-5">Hello, I am</h6>
+                <h1 class="fs-1">Mohamed Kasim.M</h1>
+                <h4 class="poppinss">Python Full Stack Developer</h4>
+                <a href="{% static 'pdf/MOHAMED KASIM-CV.pdf' %}" target="_blank" download>
+                    <!-- <button class="btn poppins">Resume</button></a> -->
+                    <button type="button" class="btn btn-success">resume</button></a>
+
+                <a class="btn live poppins" id="hireme" href="#Contact" target="_blank"><button type="button" class="btn btn-primary">Let's Talk</button></a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+
+                <img src="{% static 'images/mk.jpg'%}" alt="mk" style="height: 250px; width: 250px; border-radius: 70%;">
+                {% load static %}
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="margin-left: 50px; width: 90%; height: 550px;">
+        <h1 class="t-center my-2  t-white fs-1">About Me</h1>
+        <div class="about-container flex s-around ">
+
+            <div class="about-right flex" style="display: flex; position: relative;">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins fs-3" style="margin-left: 40px; margin-top: 40px;">Mohamed Kasim</h1>
+                    <p class="t-white poppins fs-6" style="margin-left: 40px; text-align: justify;">
+                        My name is Mohamed Kasim, and I hold a B.Tech in Information Technology from Aalim Muhammed Salegh College of Engineering. As a recent graduate, I am driven by a passion for developing high-quality products that effectively meet customer needs. I thrive on learning and applying new techniques and technologies to enhance my work and deliver exceptional results. While I find fulfillment in all aspects of my role, my true enthusiasm lies in the software development process itself. Although I am capable of project estimation, I derive the greatest satisfaction from bringing ideas to life through coding and development.
+                    </p>
+                    </div>
+                    <div style="position: absolute; left: 800px;">
+                    <img src="{% static 'images/mk.jpg'%}" style=" height: 300px; width: 300px; border-radius: 70%;">
+                    {% load static %}
+                    </div>
+                </div>     
+                     <div>    
+                    <a class="btn " id="hireme" href="#Contact"><button type="button" class="btn btn-warning" 
+                    style="margin-left: 30px; margin-bottom: 60px; font-weight: 500;">Hire Me</button></a>
+                     </div>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="Skills" style="margin-left: 40px;">
+    <h1 class="text-dark fs-1" style="margin-bottom: 40px;">Skills</h1>
+    <p>PYTHON</p>
+    <div class=" container ">
+        <div class="skills Python">75%</div>
+    </div>
+    <p>HTML</p>
+    <div class=" container ">
+        <div class="skills html">80%</div>
+    </div>
+
+    <p>JS</p>
+    <div class=" container ">
+        <div class="skills js">65%</div>
+    </div>
+    <p>CSS</p>
+    <div class=" container ">
+        <div class="skills css ">70%</div>
+    </div>
+
+    <p>MYSQL</p>
+    <div class="container ">
+        <div class="skills sql ">85%</div>
+    </div>
+
+    <p>REACT.JS</p>
+    <div class="container ">
+        <div class="skills php ">60%</div>
+    </div>
+    </section>
+
+<!-- Projects Section -->
+    <section id="project" style="margin-left: 40px;">
+        <h1 class=" t-center my-2 t-white f-2 ">Projects</h1>
+        <div class="projects-container flex s-center " style="display: flex;">
+            <div class="projects-item flex f-col s-center items-center ">
+
+                <h1 class="t-white poppins ">Mass Mail Dispatcher</h1>
+                <p class="t-white poppins " style="text-align: justify;"> I developed a web application to filter emails as valid or invalid, displaying valid emails on the site. The platform also allows users to send bulk emails through CSV file uploads, simplifying email management. This project highlights my skills in web development, data processing, and creating efficient, user-friendly interfaces.</p>
+                <div class="buttons flex s-around ">
+                    <a href=" " target="_blanks " class="btn mx-1 m-top "><button type="button " class="btn btn-success ">GitHub</button></a>
+                    <a href="# " target="_blanks " class="btn m-top live "><button type="button " class="btn btn-danger ">LiveLink</button></a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center ">
+
+                <h1 class="t-white poppins ">My Portfolio</h1>
+                <p class="t-white poppins " style="text-align: justify;">This portfolio website is built using HTML, CSS, and JavaScript, highlighting my skills and expertise. It features a sleek, minimalist design that emphasizes content, ensuring my work stands out. The clean and intuitive layout enhances user experience, making it simple for visitors to navigate and explore my projects seamlessly.</p>
+                <div class="buttons flex s-around ">
+                    <a href=" " target="_blanks " class="btn mx-1 m-top "><button type="button " class="btn btn-success ">GitHub</button></a>
+                    <a href="# " target="_blanks " class="btn m-top live "><button type="button " class="btn btn-danger ">LiveLink</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1 " style="margin-left: 40px;">
+        <h1 class=" t-center my-2 t-white f-2 ">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers ">
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter Your name..">
+
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter Your email id..">
+
+                    <label for="country">Phone</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter Your Phone number..">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">Made by Mohamed Kasim</p>
+      </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</body>
+
+</html>
